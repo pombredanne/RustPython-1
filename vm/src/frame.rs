@@ -1815,7 +1815,7 @@ impl ExecutingFrame<'_> {
     }
 
     // redox still has an old nightly, and edition 2021 won't be out for a while
-    #[allow(non_fmt_panic)]
+    #[allow(non_fmt_panics)]
     #[cold]
     #[inline(never)]
     fn fatal(&self, msg: &'static str) -> ! {
